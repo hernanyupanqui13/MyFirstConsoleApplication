@@ -7,7 +7,6 @@ namespace MyFirstConsoleApplication
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
             GetUserNameAndLocation();
             Console.WriteLine();
             Console.WriteLine();
@@ -56,6 +55,9 @@ namespace MyFirstConsoleApplication
 
             Console.WriteLine($"Today date is {dateTime.ToString("MMMM", cultureInfo)} {dateTime.Day}, {dateTime.Year}");
             Console.WriteLine($"There are {Math.Ceiling(dateDiff)} days until Christmas!");
+
+            Console.WriteLine("Press any key to continue.");
+            Console.ReadKey(true);
         }
     }
 }
